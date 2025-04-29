@@ -13,7 +13,7 @@ class Text(BaseValueObject):
             raise EmptyTextException()
 
     def as_generic_type(self):
-        return self.value
+        return str(self.value)
 
 
 @dataclass(frozen=True)
